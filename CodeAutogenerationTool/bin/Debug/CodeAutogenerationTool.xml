@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <add key="Server.Type" value="Microsoft SQL Server" />
+    <add key="Server.Ip" value="127.0.0.1" />
+    <add key="Server.UserName" value="sa" />
+    <add key="Server.Pwd" value="abc.123" />
+    <add key="Server.DataBaseName" value="PBusWCS" />
+    <add key="Server.NameSpace" value="CCS" />
+    <add key="Server.Path" value="C:\Users\liguangya\Desktop" />
+  </appSettings>
+</configuration>
