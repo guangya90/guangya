@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CodeAutogenerationTool.exe" size="48128">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CodeAutogenerationTool.exe" size="56320">
       <assemblyIdentity name="CodeAutogenerationTool" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>rlPEHF5tQcqr6WrcFBOWQT4WI8Dm1+PAqjBhmDdIWhw=</dsig:DigestValue>
+        <dsig:DigestValue>DCzn8Ob8nqbR7lRPet1wDCqx8ONQQkDxem/2JFMtGh8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -233,15 +233,24 @@ AND  d.name='{0}' --如果只查询指定表,加上此条件
                         break;
                     case "DAL":
                         //生成普通三成架构中的DAL
-                        MessageBox.Show("生成DAL");
+                        if (!Directory.Exists(txt_Path.Text + "/CodeAutoGeneration/Adapter"))
+                        {
+                            // 不存在则创建
+                            Directory.CreateDirectory(txt_Path.Text + "/CodeAutoGeneration/Adapter");
+                        }
+                        if (MSSqlAutoGenerationHelper.GenerateDAL(modelProperties, modelAttribute))
+                        {
+                            txt_Msg.Text += "成功生成" + cbb_Mode.Text + ", 数据库表名:" + cbb_Tables.Text + ";\r\n";
+                            MessageBox.Show("生成成功");
+                        }
                         break;
                     case "Model":
                         //只生成Model
                         //判断Models文件夹是否存在
-                        if (!Directory.Exists(txt_Path.Text + "/Models"))
+                        if (!Directory.Exists(txt_Path.Text + "/CodeAutoGeneration/Models"))
                         {
                             // 不存在则创建
-                            Directory.CreateDirectory(txt_Path.Text + "/Models");
+                            Directory.CreateDirectory(txt_Path.Text + "/CodeAutoGeneration/Models");
                         }
                         if (MSSqlAutoGenerationHelper.GenerateModel(modelProperties, modelAttribute))
                         {
